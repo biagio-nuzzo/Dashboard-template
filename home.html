@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard HTML, CSS, JS, Bootstrap Testing</title>
+
+  <!-- Librerie Bootstrap 4, JQuery, PopperJS, BootstrapJS Fogli di stile-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Custom Style Sheet -->
+  <link rel="stylesheet" href="css/general_style.css">
+  <!-- Fine Librerie -->
+
+</head>
+<body>
+
+  <!-- NavBar -->
+  <header class="page-header">
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item logo">
+          <h2>Dashboard Logo</h2>
+        </li>
+      </ul>
+      <ul class="navbar-nav right">
+        <li class="nav-item right-icon">
+          <a href="#" class="notification" onclick="clean_notify()">
+          <i class="fas fa-inbox"></i>
+            <span class="badge" id="notify">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SideBar -->
+    <div class="page-sidebar">
+      <nav>
+        <ul class="nav flex-column sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link-toggle tablinks" href="#" onclick="show_hide_side()">
+              <div class="custom-icon">
+                <i class="fas fa-arrow-left rotate" id=myBtn></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tablinks active" onclick="openTab(event, 'Account')">
+              <div class="custom-icon">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <span class="item-menu-sidebar" id="item-menu-sidebar1">Account</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tablinks" onclick="openTab(event, 'Home')">
+              <div class="custom-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <span class="item-menu-sidebar" id="item-menu-sidebar2">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tablinks" onclick="openTab(event, 'Data')">
+              <div class="custom-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="item-menu-sidebar" id="item-menu-sidebar3">Data</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tablinks" onclick="openTab(event, 'Summary')">
+              <div class="custom-icon">
+                <i class="fas fa-chart-area"></i>
+              </div>
+              <span class="item-menu-sidebar" id="item-menu-sidebar4">Summary</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+<!-- Page Content -->
+  <section class="page-content">
+    <section>
+      <div id="Account" class="tabcontent">
+        <h3>Account Page</h3>
+      </div>
+      <div id="Home" class="tabcontent" style="display:none">
+        <h3>Home Page</h3>
+      </div>
+      <div id="Data" class="tabcontent" style="display:none">
+        <h3>Data</h3>
+      </div>
+      <div id="Summary" class="tabcontent" style="display:none">
+        <h3>Summary</h3>
+      </div>
+      <button class="custom-button" onclick="notify()">Notify Me</button>
+      <article>BOX EXAMPLE</article>
+
+    </section>
+
+
+<!-- Footer -->
+    <footer class="page-footer">
+      <small>Developed By Biagio Nuzzo
+      </small>
+    </footer>
+  </section>
+
+
+<!-- Script -->
+<script src="js/functions.js"></script>
+
+</body>
+</html>

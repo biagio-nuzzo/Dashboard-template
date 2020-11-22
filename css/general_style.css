@@ -1,0 +1,196 @@
+/* General Style */
+
+:root{
+--page-sidebar-width: 280px;
+--page-header-height: 60px;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+/* FINE General Style */
+/* ------------------------------------------------------------------------------------------ */
+/* Header Style */
+.page-header{
+  position: fixed;
+  display:inline;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--page-header-height);
+  background-color: #39393a;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-expand-lg {
+    padding: 0px;
+}
+
+li.nav-item.logo {
+    height: var(--page-header-height) !important;
+    align-items: center !important;
+    display: flex !important;
+    color: #F1F1F0;
+    width: 280px;
+    padding-left: 15px;
+    color: #98AAB1;
+}
+
+.toggle-btn {
+    width: 280px;
+    height: var(--page-header-height) !important;
+    align-items: center !important;
+    display: flex !important;
+    color: #F1F1F0;
+}
+
+.notification {
+  color: #98AAB1;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.notification:hover{
+  transform: scale(1.1);
+  color: #F1F1F0;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 4px;
+  right: 13px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  background: #d61f1f;
+  color: white;
+}
+
+/* Header Style */
+/* ------------------------------------------------------------------------------------------ */
+/* Sidebar Style */
+.page-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  margin-top:  var(--page-header-height);
+  width: var(--page-sidebar-width);
+  background-color: #333334;
+  transition: all .4s ease;
+  box-shadow: 6px 0 10px -6px black;
+}
+
+.sidebar-nav li .nav-link, .sidebar-nav li .nav-link-toggle {
+  color: #98AAB1;
+  font-weight: 500;
+  height: 60px;
+  align-items: center!important;
+  display: flex;
+  background-color: #333335;
+  transition: 0.3s;
+  transition: transform .2s;
+  padding-left: 5px;
+  --c1: #0cade8;
+  --c2: #0e5cb0;
+  z-index: 90;
+}
+
+.sidebar-nav li .nav-link:hover, .sidebar-nav li .nav-link-toggle:hover {
+    color: #F1F1F0;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #0cade8), var(--c2, ##0e5cb0) 51%, var(--c1, #0cade8)) var(--x, 0)/ 200%;
+    --x: 100%;
+    transform: scale(1.1);
+}
+
+.active {
+    color: #F1F1F0 !important;
+    background: linear-gradient(90deg, #0e5cb0 16%, #0cade8 93%);
+    transform: scale(1.1);
+}
+
+ i.fas {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.custom-icon {
+    width: 50px;
+    text-align: center;
+}
+
+.rotate {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.rotate.left {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+/* FINE Sidebar Style */
+/* ------------------------------------------------------------------------------------------ */
+/* Page Content Style */
+
+.page-content {
+  position: fixed;
+  margin-top: calc(2% + var(--page-header-height));
+  padding-left: 30px;
+  padding-right: 30px;
+  left: var(--page-sidebar-width);
+  width: calc(100% - var(--page-sidebar-width));
+  min-height: 100vh;
+  transition: all .4s ease;
+}
+
+article {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #F1F1F0;
+    border-radius: 4px;
+}
+
+/* FINE Page Content Style */
+/* ------------------------------------------------------------------------------------------ */
+/* Footer Style */
+
+.page-footer {
+  font-size: 0.85rem;
+  text-align: right;
+  margin-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #171717;
+  color: white;
+  text-align: center;
+}
+
+/* FINE Footer Style */
+/* ------------------------------------------------------------------------------------------ */
+/* Custom Element Style */
+
+button.custom-button {
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #a09b9b;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+    color: black;
+}
+
+button.custom-button:hover {
+    transform: scale(1.1);
+}
