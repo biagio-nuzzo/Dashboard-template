@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard HTML, CSS, JS, Bootstrap Testing</title>
 
   <!-- Librerie Bootstrap 4, JQuery, PopperJS, BootstrapJS Fogli di stile-->
@@ -91,25 +92,75 @@
 <!-- Page Content -->
   <section class="page-content">
     <section>
-      <div id="Account" class="tabcontent">
-        <h3>Account Page</h3>
+      <div id="Account" class="tabcontent row">
+
+          <div class="col-sm-6">
+            <div class="container-fluid">
+              <article class="article-account-image">
+                <img class="img-fluid mx-auto d-block img-thumbnail account-image" src="image/profile-pic.jpg" alt="Profile Pic">
+                <div class="account-info">
+                  <h2> <b>Personal Info</b> </h2>
+                  <h3> <b>Name: </b>Example enterprise </h3>
+                  <h3> <b>Address: </b> Example Address</h3>
+                  <h3> <b>Website: </b> <a href="#">www.examplewebsite.com</a> </h3>
+                  <h3> <b>Registration Date: </b> 22/11/2020</h3>
+                  <h3> <b>Description: </b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="container-fluid">
+              <article class="account-edit">
+                <h2> <b>Edit Personal Information</b> </h2>
+                <h3>Here you can change you personal information</h3>
+                <div class="text-center">
+                  <button class="custom-button" onclick="show_edit()">Edit Info</button>
+                </div>
+                <form class="edit-form">
+                  <label for="fname">Name:</label><br>
+                  <input class="custom-input" type="text" name="fname">
+                  <button class="custom-button edit-button" onclick="show_edit()">Edit</button>
+                </form>
+                <form class="edit-form">
+                  <label for="fname">Address:</label><br>
+                  <input class="custom-input" type="text" name="fname">
+                  <button class="custom-button edit-button" onclick="show_edit()">Edit</button>
+                </form>
+                <form class="edit-form">
+                  <label for="fname">Website:</label><br>
+                  <input class="custom-input" type="text" name="fname">
+                  <button class="custom-button edit-button" onclick="show_edit()">Edit</button>
+                </form>
+                <form class="edit-form">
+                  <label for="fname">Description:</label><br>
+                  <input class="custom-input" type="text" name="fname">
+                  <button class="custom-button edit-button" onclick="show_edit()">Edit</button>
+                </form>
+              </article>
+            </div>
+          </div>
       </div>
-      <div id="Home" class="tabcontent" style="display:none">
+
+
+
+      <div id="Home" class="tabcontent row" style="display:none">
         <h3>Home Page</h3>
+        <button class="custom-button" onclick="notify()">Notify Me</button>
+        <article>BOX EXAMPLE</article>
       </div>
-      <div id="Data" class="tabcontent" style="display:none">
+      <div id="Data" class="tabcontent row" style="display:none">
         <h3>Data</h3>
       </div>
-      <div id="Summary" class="tabcontent" style="display:none">
+      <div id="Summary" class="tabcontent row" style="display:none">
         <h3>Summary</h3>
       </div>
-      <button class="custom-button" onclick="notify()">Notify Me</button>
-      <article>BOX EXAMPLE</article>
-
-    </section>
-
 
 <!-- Footer -->
+  </section>
     <footer class="page-footer">
       <small>Developed By Biagio Nuzzo
       </small>

@@ -14,7 +14,7 @@ function show_hide_side() {
 
 // FUNCTION TO OPEN SIDEBAR
 function open(){
-  document.documentElement.style.setProperty('--page-sidebar-width', '56px');
+  document.documentElement.style.setProperty('--page-sidebar-width', '60px');
   document.getElementById("item-menu-sidebar1").style.visibility = "hidden";
   document.getElementById("item-menu-sidebar2").style.visibility = "hidden";
   document.getElementById("item-menu-sidebar3").style.visibility = "hidden";
@@ -50,7 +50,7 @@ function openTab(evt, TabName) {
   }
 
   // MOSTRO LA SELEZIONE ED AGGIUNGO LA CLASSE ACTIVE
-  document.getElementById(TabName).style.display = "block";
+  document.getElementById(TabName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
 
@@ -65,4 +65,13 @@ function notify() {
 // CLEAN NOTIFY
 function clean_notify() {
   document.getElementById("notify").textContent = 0;
+}
+
+// CLEAN NOTIFY
+function show_edit() {
+
+  var editform = document.getElementsByClassName("edit-form");
+  for(var i = 0; i < editform.length; i++) {
+    editform[i].style.display='block'
+  }
 }
