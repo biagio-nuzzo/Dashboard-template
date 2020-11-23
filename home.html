@@ -21,7 +21,7 @@
 
 </head>
 <body>
-
+<!-- ________________________________________________________________________________________________ -->
   <!-- NavBar -->
   <header class="page-header">
     <nav class="navbar navbar-expand-lg">
@@ -40,7 +40,7 @@
       </ul>
     </nav>
   </header>
-
+<!-- ________________________________________________________________________________________________ -->
   <!-- SideBar -->
     <div class="page-sidebar">
       <nav>
@@ -88,12 +88,12 @@
       </nav>
     </div>
 
-
+<!-- ________________________________________________________________________________________________ -->
 <!-- Page Content -->
   <section class="page-content">
     <section>
+      <!-- ACCOUNT TAB -->
       <div id="Account" class="tabcontent row">
-
           <div class="col-sm-6">
             <div class="container-fluid">
               <article class="article-account-image">
@@ -111,54 +111,147 @@
               </article>
             </div>
           </div>
-
           <div class="col-sm-6">
             <div class="container-fluid">
               <article class="account-edit">
                 <h2> <b>Edit Personal Information</b> </h2>
                 <h3>Here you can change you personal information. Click on the above button to show the edit panel</h3>
                 <div class="text-center">
-                  <button class="custom-button" id="editbutton" onclick="show_hide_edit_panel()">Show</button>
+                  <button class="custom-button" id="editbutton" data-toggle="collapse" href="#edit-information" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="show_hide_edit_panel()">Show</button>
                 </div>
-                <form class="edit-form">
-                  <label for="fname">Name:</label><br>
-                  <input class="custom-input" type="text" name="fname">
-                  <button class="custom-button edit-button" onclick="">Edit</button>
-                </form>
-                <form class="edit-form">
-                  <label for="fname">Address:</label><br>
-                  <input class="custom-input" type="text" name="fname">
-                  <button class="custom-button edit-button" onclick="">Edit</button>
-                </form>
-                <form class="edit-form">
-                  <label for="fname">Website:</label><br>
-                  <input class="custom-input" type="text" name="fname">
-                  <button class="custom-button edit-button" onclick="">Edit</button>
-                </form>
-                <form class="edit-form">
-                  <label for="fname">Description:</label><br>
-                  <input class="custom-input" type="text" name="fname">
-                  <button class="custom-button edit-button" onclick="">Edit</button>
-                </form>
+                  <div class="collapse" id="edit-information">
+                      <form class="edit-form">
+                        <label class="form-label" for="fname">Name:</label><br>
+                        <input class="custom-input" type="text" name="fname">
+                        <button class="custom-button edit-button" onclick="">Edit</button>
+                      </form>
+                      <form class="edit-form">
+                        <label class="form-label" for="fname">Address:</label><br>
+                        <input class="custom-input" type="text" name="fname">
+                        <button class="custom-button edit-button" onclick="">Edit</button>
+                      </form>
+                      <form class="edit-form">
+                        <label class="form-label" for="fname">Website:</label><br>
+                        <input class="custom-input" type="text" name="fname">
+                        <button class="custom-button edit-button" onclick="">Edit</button>
+                      </form>
+                      <form class="edit-form">
+                        <label class="form-label" for="fname">Description:</label><br>
+                        <input class="custom-input" type="text" name="fname">
+                        <button class="custom-button edit-button" onclick="">Edit</button>
+                      </form>
+                  </div>
               </article>
             </div>
           </div>
       </div>
-
-
-
+      <!-- FINE ACCOUNT TAB -->
+<!-- ________________________________________________________________________________________________ -->
+      <!-- HOME TAB -->
       <div id="Home" class="tabcontent row" style="display:none">
-        <h3>Home Page</h3>
-        <button class="custom-button" onclick="notify()">Notify Me</button>
-        <article>BOX EXAMPLE</article>
+        <div class="container-fluid">
+          <article class="article-home">
+            <div class="col">
+              <div class="row rasp-info">
+                <div class="col-sm-1 rasp-icon-cell">
+                  <i class="fas fa-microchip rasp-icon"></i>
+                </div>
+                <div class="col-sm-8 rasp-description">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+                <div class="col-sm-1 rasp-status">
+                  <span><div class="led-red"></div></span>
+                </div>
+                <div class="col-sm-2 rasp-button">
+                  <div class="text-center">
+                    <button class="custom-button" id="editbutton" data-toggle="collapse" href="#rasp-1" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="show_hide_edit_panel()">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" id="rasp-1">
+                <hr>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <span>Detail of Raspberry</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-home">
+            <div class="col">
+              <div class="row rasp-info">
+                <div class="col-sm-1 rasp-icon-cell">
+                  <i class="fas fa-microchip rasp-icon"></i>
+                </div>
+                <div class="col-sm-8 rasp-description">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+                <div class="col-sm-1 rasp-status">
+                  <span><div class="led-yellow"></div></span>
+                </div>
+                <div class="col-sm-2 rasp-button">
+                  <div class="text-center">
+                    <button class="custom-button" id="editbutton" data-toggle="collapse" href="#rasp-2" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="show_hide_edit_panel()">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" id="rasp-2">
+                <hr>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <span>Detail of Raspberry</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-home">
+            <div class="col">
+              <div class="row rasp-info">
+                <div class="col-sm-1 rasp-icon-cell">
+                  <i class="fas fa-microchip rasp-icon"></i>
+                </div>
+                <div class="col-sm-8 rasp-description">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+                <div class="col-sm-1 rasp-status">
+                  <span><div class="led-green"></div></span>
+                </div>
+                <div class="col-sm-2 rasp-button">
+                  <div class="text-center">
+                    <button class="custom-button" id="editbutton" data-toggle="collapse" href="#rasp-3" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="show_hide_edit_panel()">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" id="rasp-3">
+                <hr>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <span>Detail of Raspberry</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
+      <!-- FINE HOME TAB -->
+<!-- ________________________________________________________________________________________________ -->
+      <!-- DATA TAB -->
       <div id="Data" class="tabcontent row" style="display:none">
         <h3>Data</h3>
       </div>
+      <!-- FINE DATA TAB -->
+<!-- ________________________________________________________________________________________________ -->
+      <!-- SUMMARY TAB -->
       <div id="Summary" class="tabcontent row" style="display:none">
         <h3>Summary</h3>
       </div>
-
+      <!-- FINE SUMMARY TAB -->
+<!-- ________________________________________________________________________________________________ -->
 <!-- Footer -->
   </section>
     <footer class="page-footer">
@@ -166,8 +259,7 @@
       </small>
     </footer>
   </section>
-
-
+<!-- ________________________________________________________________________________________________ -->
 <!-- Script -->
 <script src="js/functions.js"></script>
 

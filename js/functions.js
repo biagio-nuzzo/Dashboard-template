@@ -1,4 +1,3 @@
-
 // VARIABLE
 var side_status = "open";
 var edit_panel_status = "close";
@@ -79,20 +78,12 @@ function show_hide_edit_panel() {
 
 // FUNCTION OPEN EDIT PANEL
 function open_panel() {
-  var editform = document.getElementsByClassName("edit-form");
-  for(var i = 0; i < editform.length; i++) {
-    editform[i].style.display='block'
-  }
   edit_panel_status = "open";
   document.getElementById("editbutton").textContent = "Hide";
 }
 
 // FUNCTION CLOSE EDIT PANEL
 function close_panel() {
-  var editform = document.getElementsByClassName("edit-form");
-  for(var i = 0; i < editform.length; i++) {
-    editform[i].style.display='none'
-  }
     edit_panel_status = "close";
       document.getElementById("editbutton").textContent = "Show";
 }

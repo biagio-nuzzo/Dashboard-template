@@ -249,7 +249,55 @@ input.custom-input {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 2px 2px;
 }
 
-.edit-form{
-  display: none;
+label.form-label {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+}
+
+form.edit-form {
+    padding-bottom: 20px;
 }
 /* FINE INPUT FORM */
+
+/* RASPBERRY INFO */
+i.fas.fa-microchip.rasp-icon {
+    font-size: 35px;
+}
+
+.col-sm-1.rasp-icon-cell {
+    text-align: center;
+}
+
+.rasp-info{
+    align-items: center;
+}
+/* FINE RASPBERRY INFO FORM */
+
+/* LED */
+.led-red {
+  margin: 20px auto;
+  width: 12px;
+  height: 12px;
+  background-color: #e800009e;
+  border-radius: 50%;
+  box-shadow: #d03636 0 -1px 5px 1px, inset #a91f1f 0 -1px 6px, #fd1612 0 2px 7px;
+}
+
+.led-yellow {
+  margin: 20px auto;
+  width: 12px;
+  height: 12px;
+  background-color: #f5de0dc9;
+  border-radius: 50%;
+  box-shadow: #bece20 0 -1px 5px 1px, inset #929208 0 -1px 6px, #DD0 0 2px 7px;
+}
+
+.led-green {
+  margin: 20px auto;
+  width: 12px;
+  height: 12px;
+  background-color: #9ce40b;
+  border-radius: 50%;
+  box-shadow: #08a520 0 -1px 5px 1px, inset #6c9814 0 -1px 6px, #7D0 0 2px 7px;
+}
+/* FINE LED */
